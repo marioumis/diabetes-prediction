@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Prédiction du diabète</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Prédiction du diabète</h1>
+    <p>Entrez les informations du patient pour estimer le risque de diabète.</p>
+
+    <form id="diabetes-form">
+        <div class="grid">
+            <label>
+                Grossesses (Pregnancies)
+                <input type="number" id="Pregnancies" step="1" min="0" required />
+            </label>
+
+            <label>
+                Glucose
+                <input type="number" id="Glucose" step="0.1" min="0" required />
+            </label>
+
+            <label>
+                Pression artérielle (BloodPressure)
+                <input type="number" id="BloodPressure" step="0.1" min="0" required />
+            </label>
+
+            <label>
+                Épaisseur de peau (SkinThickness)
+                <input type="number" id="SkinThickness" step="0.1" min="0" required />
+            </label>
+
+            <label>
+                Insuline
+                <input type="number" id="Insulin" step="0.1" min="0" required />
+            </label>
+
+            <label>
+                BMI
+                <input type="number" id="BMI" step="0.1" min="0" required />
+            </label>
+
+            <label>
+                Diabetes Pedigree Function
+                <input type="number" id="DiabetesPedigreeFunction" step="0.01" min="0" required />
+            </label>
+
+            <label>
+                Âge
+                <input type="number" id="Age" step="1" min="0" required />
+            </label>
+        </div>
+
+        <button type="submit">Prédire</button>
+    </form>
+
+    <div id="result" class="result"></div>
+    <div id="error" class="error"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
