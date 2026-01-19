@@ -8,7 +8,13 @@ This project focuses on connecting a trained ML model with a simple web interfac
 ## 🧠 Overview
 The goal of this project is to demonstrate an end-to-end machine learning workflow:
 - data → model → API → user interface  
+
+The model was trained using the Pima Indians Diabetes Dataset available on Kaggle.  
+Dataset link: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+
 It was built for learning purposes and to practice ML deployment concepts.
+
+
 
 ---
 
